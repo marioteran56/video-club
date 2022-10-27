@@ -1,5 +1,5 @@
 FROM node
-MAINTAINER Mario Terán
+MAINTAINER Mario Alberto Teran Acosta
 WORKDIR /app
 COPY . .
 RUN npm install

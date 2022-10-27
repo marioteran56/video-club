@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const controller = require('../controllers/users');
+const controller = require('../controllers/movies');
 
 /* GET users listing. */
 router.get('/', controller.list);
@@ -20,6 +20,8 @@ router.put('/:id', controller.replace);
 
 /* Patch user. */
 router.patch('/:id', controller.update);
+
+router.patch('/add/actor', controller.addActor);
 
 /* GET users listing. */
 router.delete('/:id', controller.destroy);
