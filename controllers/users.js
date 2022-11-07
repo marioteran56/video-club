@@ -10,9 +10,7 @@ function index(req, res, next) {
 }
 
 function create(req, res, next) {
-    const name = req.body.name;
-    const lastName = req.body.lastName;
-    res.send(`respond with CREATE  => ${name} ${lastName}`);
+    res.send(`respond with CREATE`);
 }
 
 function replace(req, res, next) {
